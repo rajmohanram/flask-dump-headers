@@ -1,0 +1,14 @@
+.git/
+.idea/
+.venv/
+data/.
+
+# Additional exclusions (optional)
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+.tox
+.coverage
+.coverage.*
+.cache
