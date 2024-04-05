@@ -1,8 +1,8 @@
-FROM --platform=linux/amd64 python:3.12-slim
+FROM python:3.12-slim
 
 WORKDIR /app
 
-COPY pip.conf /root/.config/pip/pip.conf
+#COPY pip.conf /root/.config/pip/pip.conf
 
 COPY requirements.txt requirements.txt
 

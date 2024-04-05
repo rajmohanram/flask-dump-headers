@@ -2,10 +2,12 @@ from flask import send_from_directory, request, render_template, jsonify, Respon
 from app.main import bp
 import os
 import json
+import logging
 
 
 @bp.route('/')
 def index():
+    logging.info(request.headers)
     if request.headers['Accept'] == "application/json":
         return Response(response=json.dumps(dict(request.headers)), status=200,
                         mimetype="application/json")
